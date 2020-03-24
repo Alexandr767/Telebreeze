@@ -2,8 +2,11 @@
     position:relative;
     background-color: rgb(248,113,81);
     width: 100%;
-    margin-top: 64px;
-    display: block;
+    /* margin-top: 124px; */
+    display: flex;
+    justify-content: space-around;
+    height:100%;
+    z-index: -1;
 }
 #header{
     position: fixed;
@@ -11,12 +14,12 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-}
+    width: auto;
+} 
 
 .flex-container_head{
     display: flex;
-    width: 100%;
+    width: auto;
     justify-content:center;
 
 }
@@ -25,24 +28,48 @@ flex-container_main{
 }
 body{
     margin: 0;
+    background-color: rgb(248,113,81);
 }
 
-
-#sidebar{
-    border:2px solid #2196F3;
-    background:rgba(0,0,0,0.5);
-    border-radius:10px;
+button{
+    height: 40px;
+    width: 40px;
+    color: black;
+    margin: 10px;
+    padding-left: 2px;
+    /* margin-top: 64px; */
+}
+#sidebared{
+    background:rgba(60,60,60,1);
     display: block;
     position: fixed;
     list-style: none;
     margin: 0;
     box-sizing: border-box;
     height: 100%;
-    top: 30px;
+    top: 0px;
     left: -100%;
     width:240px;
-    transition:left .5s;
-    }
-    #sidebar.open{
+    transition:left .8s;
+    z-index: 2;
+}
+#sidebared.open{
       left:0;
-    }
+}
+#sidebared.close{
+    right:0;
+}
+.blackline{
+height: 60px;
+color: black;
+margin-top: 64px;
+background-color: black;
+}
+#closebutton{
+    padding: 0px;
+}
+.sidediv{
+    box-sizing: border-box;
+    border: 2px solid black;   
+}
+
