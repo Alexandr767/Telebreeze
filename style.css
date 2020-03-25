@@ -70,8 +70,26 @@ background-color: black;
 }
 .sidediv{
     box-sizing: border-box;
-    border: 2px solid black; 
+    border: 1px solid whitesmoke; 
     width: 240px;
-    height: 80px;  
+    height: 80px; 
+    display: flex; 
+    justify-content: space-between;
+    background-color: gray;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
 }
-
+.flex-container_element_1{
+    margin: 0px;
+    padding: 5px;
+    padding-bottom: 0px;
+    height: 30px;
+}
+.flex-container_element_2{
+    margin: 0px;
+    padding: 5px;
+}
+.buttonside{
+    margin-bottom: 0px;
+}

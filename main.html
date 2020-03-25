@@ -20,20 +20,20 @@
             <button onclick="document.getElementById('sidebared').classList.remove('open')" id="closebutton">
                 <img src="icons/Cross-lines.png" alt="X" width="30px" height="30px">
             </button>
-            <div class="sidediv" id="0"><button onclick="numberpage=0"> </button></div>
-            <div class="sidediv" id="1"><button onclick="numberpage=1"> </button ></div>
-            <div class="sidediv" id="2"><button onclick="numberpage=2"> </button></div>
-            <div class="sidediv" id="3"><button onclick="numberpage=3"> </button></div>
-            <div class="sidediv" id="4"><button onclick="numberpage=4"> </button></div>
+            <div class="sidediv flex-container" id="0"><button class = "buttonside" onclick="numberside=0"> </button></div>
+            <div class="sidediv flex-container" id="1"><button class = "buttonside" onclick="numberside=1"> </button ></div>
+            <div class="sidediv flex-container" id="2"><button class = "buttonside" onclick="numberside=2"> </button></div>
+            <div class="sidediv flex-container" id="3"><button class = "buttonside" onclick="numberside=3"> </button></div>
+            <div class="sidediv flex-container" id="4"><button class = "buttonside" onclick="numberside=4"> </button></div>
         </div>
 
-            <div class="flex-container_body" id="body">
-                <div class="flex-container_element-1" id="image">
-                    <img src="image/main.png" alt="main image" width="300px" height="300px">
-                </div>
-                <div class="flex-container_element-2" id="text_right">
-                </div>
+        <div class="flex-container_body" id="body">
+            <div class="flex-container_element-1" id="image">
+                <!-- <img src="image/main.png" alt="main image" width="300px" height="300px"> -->
             </div>
+            <div class="flex-container_element-2" id="text_right">
+            </div>
+        </div>
         
     </body>
     <script src="script.js" type="text/javascript"></script>

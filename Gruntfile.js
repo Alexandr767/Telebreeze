@@ -6,3 +6,9 @@ module.exports = function(grunt) {
       jitGrunt: true
     });
   };
+
+
+
+  grunt.initConfig({
+    grunt.registerTask('default', ['imagemin']);
+  });
