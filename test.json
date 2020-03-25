@@ -8,7 +8,7 @@
     "header": "Lorem ipsum",
     "short_text": "Suspendisse fringilla dui nulla, sit amet fermentum nunc consectetur eget.",
     "full_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "image_url": "https://github.com/Alexandr767/Telebreeze/blob/master/image/main.png",
+    "image_url": "/image/main.png",
     "full_text_btn_title": "Learn more"
     }
     },
