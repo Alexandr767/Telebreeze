@@ -21,6 +21,18 @@ var numberside = 0; // начало функции для загрузки ко�
 function showPage(jsonObj) {
   var Show = jsonObj['menu'];
 
+  var myH1 = document.createElement('h1');
+  myH1.textContent = Show[number].content.header;
+  document.getElementById('text_right').append(myH1);
+
+  var myP = document.createElement('p');
+  myP.textContent = Show[number].content.short_text;
+  document.getElementById('text_right').append(myP);
+
+  var IMG = document.createElement('img');
+  IMG.src = Show[number].content.image_url;
+  document.getElementById('image').append(IMG);
+  
 }
 
           
@@ -40,8 +52,6 @@ function sidebar(jsonObj){        // загрузка заголовков и п
     myH2.textContent = Show[number].menu_title;
     document.getElementById(number).prepend(myH2);
     myH2.className = "flex-container_element_1";
-
-   
   }
 }
 

@@ -93,3 +93,6 @@ background-color: black;
 .buttonside{
     margin-bottom: 0px;
 }
+.reverseimg{
+    transform: scale(-1, 1)
+}
