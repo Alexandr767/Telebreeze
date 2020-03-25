@@ -21,32 +21,32 @@ var numberside = 0; // начало функции для загрузки ко�
 function showPage(jsonObj) {
   var Show = jsonObj['menu'];
 
-  var myH1 = document.createElement('h1');
+  var myH1 = document.createElement('h1');     // Создание заголовка основной страницы
   myH1.textContent = Show[number].content.header;
   document.getElementById('text_right').append(myH1);
 
-  var myP1 = document.createElement('p');
+  var myP1 = document.createElement('p');     // создание краткого текста
   myP1.textContent = Show[number].content.short_text;
   document.getElementById('text_right').append(myP1);
 
-  var myP2 = document.createElement('p');
+  var myP2 = document.createElement('p');    // создание полного текста
   myP2.textContent = Show[number].content.full_text;
   document.getElementById('text_right').append(myP2);
-  myP2.className = "Hide_text";
+  myP2.className = "Hide_text";     // по умолчанию полный текст скрыт
   myP2.style.display = "none";
 
-  var IMG = document.createElement('img');
+  var IMG = document.createElement('img');   // Создание и вывод картинки
   IMG.src = Show[number].content.image_url;
   document.getElementById('image').append(IMG);
 
-  var BTN = document.createElement('button');
+  var BTN = document.createElement('button');   // Создание кнопки, дл открытия полного текста
   BTN.textContent = Show[number].content.full_text_btn_title;
   document.getElementById('text_right').append(BTN);
   BTN.className = "main_button";
 
-  BTN.onclick = alertion;
+  BTN.onclick = open_text;
 
-  function alertion(){
+  function open_text(){      // функция открытия текста
     myP2.style.display = "block";
     myP1.style.display = "none";
     BTN.style.display = "none";
@@ -57,7 +57,6 @@ function showPage(jsonObj) {
   
   
 }
-
           
 function sidebar(jsonObj){        // загрузка заголовков и подзаголовков для кнопок скрытого меню.
   var Show = jsonObj['menu'];
