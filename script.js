@@ -29,7 +29,7 @@ function sidebar(jsonObj){        // загрузка заголовков и п
       
   for (var i = 0; i < Show.length; i++) {
     console.log(i);
-
+    number=i;
     var myH2 = document.createElement('h2');       // загружаем из json заголовок и создаем элемент в html
     myH2.textContent = Show[number].menu_title;
     document.getElementById(number).prepend(myH2);
