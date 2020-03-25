@@ -1,5 +1,5 @@
 let xhr = new XMLHttpRequest(); //Запрашиваем json
-xhr.open('GET', 'https://raw.githubusercontent.com/Alexandr767/Telebreeze/master/package.json');
+xhr.open('GET', 'https://raw.githubusercontent.com/Alexandr767/Telebreeze/master/test.json');
 xhr.responseType = 'json';
 xhr.send();
 var number = 0;
