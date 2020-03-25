@@ -4,9 +4,9 @@
     width: 100%;
     /* margin-top: 124px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height:100%;
-    z-index: -1;
+    z-index: 0;
 }
 #header{
     position: fixed;
@@ -95,4 +95,31 @@ background-color: black;
 }
 .reverseimg{
     transform: scale(-1, 1)
+}
+
+.main_button {
+    border: medium none;
+    background-image: none; 
+    background: transparent;
+    background-color: transparent;
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+   
+  }
+  
+  .main_button:hover,
+.main_button:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+              
 }

@@ -1,7 +1,7 @@
 let xhr = new XMLHttpRequest(); //Запрашиваем json
 xhr.open('GET', 'https://raw.githubusercontent.com/Alexandr767/Telebreeze/master/test.json');
 xhr.responseType = 'json';
-xhr.send();
+xhr.send(); 
 var number = 0;
 
 
@@ -25,13 +25,36 @@ function showPage(jsonObj) {
   myH1.textContent = Show[number].content.header;
   document.getElementById('text_right').append(myH1);
 
-  var myP = document.createElement('p');
-  myP.textContent = Show[number].content.short_text;
-  document.getElementById('text_right').append(myP);
+  var myP1 = document.createElement('p');
+  myP1.textContent = Show[number].content.short_text;
+  document.getElementById('text_right').append(myP1);
+
+  var myP2 = document.createElement('p');
+  myP2.textContent = Show[number].content.full_text;
+  document.getElementById('text_right').append(myP2);
+  myP2.className = "Hide_text";
+  myP2.style.display = "none";
 
   var IMG = document.createElement('img');
   IMG.src = Show[number].content.image_url;
   document.getElementById('image').append(IMG);
+
+  var BTN = document.createElement('button');
+  BTN.textContent = Show[number].content.full_text_btn_title;
+  document.getElementById('text_right').append(BTN);
+  BTN.className = "main_button";
+
+  BTN.onclick = alertion;
+
+  function alertion(){
+    myP2.style.display = "block";
+    myP1.style.display = "none";
+    BTN.style.display = "none";
+
+   
+  }
+ 
+  
   
 }
 
