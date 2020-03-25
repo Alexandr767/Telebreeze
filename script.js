@@ -50,12 +50,7 @@ function showPage(jsonObj) {
     myP2.style.display = "block";
     myP1.style.display = "none";
     BTN.style.display = "none";
-
-   
   }
- 
-  
-  
 }
           
 function sidebar(jsonObj){        // загрузка заголовков и подзаголовков для кнопок скрытого меню.
@@ -77,3 +72,28 @@ function sidebar(jsonObj){        // загрузка заголовков и п
   }
 }
 
+
+
+
+// функция переключения иконок в зависимости от размера экрана. 
+//В данном случае взял только ширину, поскольку её хватает для определения типа устройства.
+
+
+var smartWidth = window.innerWidth;
+if (smartWidth >= 1000){    
+  document.getElementById('three').style.border = "1px solid black";
+  document.getElementById('two').style.border = "1none";
+  document.getElementById('one').style.border = "none";
+}
+else if (smartWidth>767 && smartWidth<1000)
+{
+  document.getElementById('two').style.border = "1px solid black";
+  document.getElementById('three').style.border = "none";
+  document.getElementById('one').style.border = "none";
+  }
+else if(smartWidth<767)
+{
+  document.getElementById('one').style.border = "1px solid black";
+  document.getElementById('three').style.border = "none";
+  document.getElementById('two').style.border = "none";
+}

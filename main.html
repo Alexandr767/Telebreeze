@@ -3,21 +3,21 @@
     <head>
         <link href="style.css" rel="stylesheet">
         <title>Test Telebreeze</title>
-        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header></header>
         
             <div class="flex-container_head" id="header">
-                <img src="icons/phone.png" alt="phone" class="flex-container_element-1">
-                <img src="icons/tablet.png" alt="tablet" class="flex-container_element-2">
-                <img src="icons/pc.png" alt="pc" class="flex-container_element-3">
+                <img src="icons/phone.png" alt="phone" class="flex-container_element-1" height="64px" id="one">
+                <img src="icons/tablet.png" alt="tablet" class="flex-container_element-2" height="64px" id="two">
+                <img src="icons/pc.png" alt="pc" class="flex-container_element-3" height="64px" id="three">
             </div>
         
         <div class="blackline">
             <button onclick="document.getElementById('sidebared').classList.toggle('open')">Menu</button>
         </div>
-        
+
         <div id="sidebared">
             <button onclick="document.getElementById('sidebared').classList.remove('open')" id="closebutton">
                 <img src="icons/Cross-lines.png" alt="X" width="30px" height="30px">
